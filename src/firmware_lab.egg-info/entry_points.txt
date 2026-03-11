@@ -1,0 +1,2 @@
+[console_scripts]
+firmware-lab = firmware_lab.cli:main

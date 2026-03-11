@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "firmware-lab"
+version = "0.1.0"
+description = "Hardware-free firmware automation with Renode + QEMU (QMP), including checkpoints, clone, and migration."
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+firmware-lab = "firmware_lab.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
